@@ -1,5 +1,6 @@
-import 'package:carry_go/constant/color.dart';
 import 'package:flutter/material.dart';
+
+import 'package:carry_go/screen/started.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -11,14 +12,13 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
-      appBar: AppBar(
-        title: const Text('Profile'),
-      ),
-      body: const Center(
-        child: Text('Profile Screen Content'),
-      ),
+    return Center(
+      child: GestureDetector(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Started()));
+          },
+          child: const Text('Log out')),
     );
   }
 }

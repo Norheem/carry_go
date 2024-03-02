@@ -11,14 +11,8 @@ class History extends StatefulWidget {
 class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
-      appBar: AppBar(
-        title: const Text('History'),
-      ),
-      body: const Center(
-        child: Text('History Screen Content'),
-      ),
+    return Center(
+      child: Text('History Screen Content'),
     );
   }
 }

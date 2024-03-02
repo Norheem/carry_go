@@ -94,17 +94,12 @@ class _HomeState extends State<Home> {
                         const SizedBox(
                           height: 5,
                         ),
-                        Positioned(
-                          bottom: 0,
-                          left: 0,
-                          right: 0,
-                          child: Container(
-                            height: 2,
-                            width: 40,
-                            color: selectedIndex == e['id']
-                                ? AppColors.primaryColor
-                                : AppColors.dark,
-                          ),
+                        Container(
+                          height: 2,
+                          width: 35,
+                          color: selectedIndex == e['id']
+                              ? AppColors.primaryColor
+                              : AppColors.dark,
                         ),
                         const SizedBox(
                           height: 5,

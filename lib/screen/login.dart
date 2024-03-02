@@ -16,9 +16,8 @@ class Login extends StatelessWidget {
       backgroundColor: AppColors.scaffoldBackground,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(
+          padding: const EdgeInsets.symmetric(horizontal: 20).copyWith(
             top: 150,
-            left: 40,
           ),
           child: Column(
             children: [

@@ -11,14 +11,8 @@ class Request extends StatefulWidget {
 class _RequestState extends State<Request> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
-      appBar: AppBar(
-        title: const Text('Request'),
-      ),
-      body: const Center(
-        child: Text('Request Screen Content'),
-      ),
+    return const Center(
+      child: Text('Request Screen Content'),
     );
   }
 }
